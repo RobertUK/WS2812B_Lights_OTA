@@ -1,0 +1,4 @@
+{
+    "idf.portWin": "COM8",
+    "cmake.sourceDirectory": "C:/git/rgbb/.pio/libdeps/esp-wrover-kit/FastLED"
+}
