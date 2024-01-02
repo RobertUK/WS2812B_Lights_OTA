@@ -11,7 +11,7 @@ Note: Please use our back link in your site (webthemez.com)
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Lights Web Interface - Comming Soon!!!</title>
+<title> Light_Control - Comming Soon!!!</title>
 <meta name="description" content="Ace Page under construction">
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold"> 
@@ -22,28 +22,51 @@ Note: Please use our back link in your site (webthemez.com)
 <body id="home">
 <div id="Header">
 <div class="wrapper">
-	<h1>Lights Web Interface</h1>
+	<h1>Light_Control</h1>
 	<ul> 
-		<li><a href="" title="Twitter" class="twitterIcon"></a></li>
-		<li><a href="" title="facebook" class="facebookIcon"></a></li>
-		<li><a href="" title="linkedIn" class="linkedInIcon"></a></li>
-		<li><a href="" title="Pintrest" class="pintrestIcon"></a></li>
+		<!-- <li>https://twitter.com/itthingsUK<a href="" title="Twitter" class="twitterIcon"></a></li> -->
+		<li><a href="https://www.facebook.com/ITThingsUK/" title="facebook" class="facebookIcon"></a></li>
+		<li><a href="https://www.linkedin.com/in/robertmurphylondon/" title="linkedIn" class="linkedInIcon"></a></li>
+		<li><a href="hhttps://github.com/robertuk/" title="linkedIn" class="githubIcon"></a></li>
+		
+		<!-- <li><a href="" title="Pintrest" class="pintrestIcon"></a></li> -->
 	</ul>
 	</div>
 </div>
-<div id="Content" class="wrapper">
-	<h2>We are under construction</h2>
 <br/><br/> 
-<div class="countdown styled"></div>
-<div id="subscribe">
-	<h3>Stay in touch</h3>
-	<form action="" method="post" onsubmit="">
-		<p><input name="" value="Enter your e-mail" type="text" id=""/>
-		<input type="button" value="Submit"/></p>
-	</form>
+
+
+
+	<ul>
+		<h3>Functions</h3>
+		<li><a id="lightson" href="/lightson">Lights On</a></li>
+		<li><a href="/lightsoff">Lights Off</a></li>
+		<li><a href="/pauseanimation">Pause Animation</a></li>
+		<li><a href="/resumeanimation">Resume Animation</a></li>		
+		<li><a href="/setbrightness?brightness=30">Set Brightness 30%</a></li>
+		<li><a href="/setbrightness?brightness=255">Set Brightness 100%</a></li>
+		<li><a id="update" href="/_ac">Update</a></li>
+		<!--<li><a href="#elements">Elements</a></li>-->
+	</ul>
+
+	<form action="/setcolour" method="get" id="frmLights">
+		<label for="cars">Choose a colour:</label>
+		<select name="colour" id="colours">
+		  <option value="16711680">Red</option>
+		  <option value="32768">Green</option>
+		  <option value="255">Blue</option>
+		  <option value="16761035">Pink</option>
+		  <option value="16777215">White</option>
+		  <option value="10824234">Brown</option>
+		  <option value="16776960">Yellow</option>
+		</select>
+
+	  </form>
+	  
+
+
 </div>
-</div>
-<footer><span>Template by: <a href="http://webthemez.com" alt="webthemez">WebThemez.com</a></span></footer>	 
+<!-- <footer><span>Template by: <a href="http://webthemez.com" alt="webthemez">WebThemez.com</a></span></footer>	  -->
 <div id="overlay"></div>
 
 <!--Scripts-->
@@ -51,5 +74,6 @@ Note: Please use our back link in your site (webthemez.com)
 <script type="text/javascript" src="js/jquery.vegas.min.js"></script>
 <script type="text/javascript" src="js/jquery.countdown.js"></script>
 <script type="text/javascript" src="js/global.js"></script>
+<script type="text/javascript" src="js/notify.js"></script>
 </body>
 </html>

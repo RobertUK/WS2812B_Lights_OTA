@@ -12,6 +12,7 @@ body {
 	height:100%;
 	width:100%;
 	margin:0;
+	text-align: center;
 }
 .ie body {
 	filter: dropshadow(color=#000000, offx=0, offy=1);	
@@ -101,6 +102,21 @@ width:34px;
 height:34px; 
 display: inline-block;
 }
+
+
+#content ul li{
+	width:34px;
+	height:34px; 
+	display: inline-block;
+	list-style-type: none;
+	}
+
+	 ul{
+
+		list-style-type: none;
+		}
+
+
 .twitterIcon, .facebookIcon, .linkedInIcon, .pintrestIcon{
 background: url('../images/social-icons.png') -74px 0px;
 }
@@ -113,6 +129,9 @@ background-position: -245px 0px;
 .pintrestIcon{
 background-position: -331px 0px;
 }
+.githubIcon{
+	background-position: -10px 0px;
+	}
 
 #Content h2 {
 margin: 0px 0px 65px 0px;
@@ -244,10 +263,11 @@ min-width: initial !important;
 	clear: both;
 	text-align: center; 
 	padding: 0px;
+	list-style-type: none;
 	}
 	#Header ul li{
 	float:initial;
-	display: inline-block;
+	
 	}
 	#Content h2 {
 	margin: 0px 0px 0px 0px;
